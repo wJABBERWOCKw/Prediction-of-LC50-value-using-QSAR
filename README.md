@@ -35,3 +35,5 @@ In SVR, the goal is to find a regression function that best fits the data while 
 
 
 Make Predictions: Use the trained model to predict the LC50 values for new chemical substances.
+
+![image](https://github.com/wJABBERWOCKw/Prediction-of-LC50-value-using-QSAR/assets/91718184/af11139a-d1fd-4187-9f60-22a92d95f1d9)
