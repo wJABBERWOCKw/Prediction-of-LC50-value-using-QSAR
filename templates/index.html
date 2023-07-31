@@ -1,0 +1,42 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LC50 Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">LC50 Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="CICo">CICo:</label>
+            <input type="float" id="CICo" name="CICo" class="input-field"><br>
+
+            <label for="SM1">SM1:</label>
+            <input type="float" id="SM1" name="SM1" class="input-field"><br>
+
+            <label for="GATS1i">GATS1i:</label>
+            <input type="float" id="GATS1i" name="GATS1i" class="input-field"><br>
+
+            <label for="NdsCH">NdsCH:</label>
+            <input type="float" id="NdsCH" name="NdsCH" class="input-field"><br>
+
+            <label for="NdssC">NdssC:</label>
+            <input type="float" id="NdssC" name="NdssC" class="input-field"><br>
+
+            <label for="MLOGP">MLOGP:</label>
+            <input type="float" id="MLOGP" name="MLOGP" class="input-field"><br>
+
+            <!-- Repeat the above lines for other descriptors -->
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+
+        <p id="prediction_result" class="prediction-value"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+
+</body>
+</html>
